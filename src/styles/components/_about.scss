@@ -1,0 +1,130 @@
+@use "../base/var" as *;
+.about {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  /* .about__container */
+
+  &__container {
+    position: relative;
+  }
+
+  /* .about__name */
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $grayscale-black;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 7%;
+      width: 529px;
+      height: 2px;
+      background-color: $grayscale-black;
+    }
+  }
+
+  /* .about__title */
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.7;
+    color: $grayscale-50;
+    padding-bottom: 60px;
+  }
+
+  /* .about__banner */
+
+  &__banner {
+    max-width: 883px;
+    min-height: 525px;
+    background-image: url("../src/assets/images/about-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 6;
+  }
+
+  /* .about__banner-avatar */
+
+  &__banner-avatar {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    position: absolute;
+    top: 5%;
+    left: 88%;
+    width: 276px;
+    height: 90px;
+    background-color: $grayscale-white;
+    box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+  }
+
+  &__banner-blocks {
+    width: 133px;
+    height: 52px;
+  }
+  /* .about__banner-img */
+
+  &__banner-img {
+    width: 51px;
+    height: 56px;
+    margin-right: 20px;
+  }
+
+  /* .about__banner-name */
+
+  &__banner-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $grayscale-black;
+  }
+
+  /* .about__banner-prof */
+
+  &__banner-prof {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $grayscale-10;
+  }
+
+  /* .about__baner-info */
+
+  &__banner-info {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+  }
+
+  /* .about__banner-info */
+
+  &__banner-text {
+    max-width: 223px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $grayscale-10;
+    padding-bottom: 40px;
+  }
+
+  /* .about__btn */
+
+  &__btn {
+    padding: 14px 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: $grayscale-white;
+  }
+}

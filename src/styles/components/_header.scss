@@ -1,0 +1,80 @@
+@use "../base/var" as *;
+.header {
+  padding-top: 40px;
+  padding-bottom: 48.5px;
+  /* .header__container */
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* .header__link */
+
+  &__link {
+    margin-right: 360px;
+  }
+
+  /* .header__nav */
+
+  &__nav {
+    margin-right: 74px;
+  }
+
+  /* .header__nav-list */
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+  }
+
+  /* .header__nav-link */
+
+  &__nav-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $grayscale-50;
+    outline: 1px solid transparent;
+    transform: scale(1);
+    transition:
+      transform 0.3s ease-in-out,
+      outline-color 0.3s ease-in-out,
+      border-radius 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+
+    &:focus-visible {
+      outline-color: $grayscale-black;
+      border-radius: 4px;
+    }
+
+    &:active {
+      transform: scale(1.25);
+    }
+  }
+
+  /* .header__btn */
+
+  &__btn {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 14px 32px;
+    transition:
+      background 0.3s ease-in-out,
+      color 0.3s ease-in-out,
+      border-color 0.3s ease-in-out;
+
+    &:focus,
+    &:active {
+      background: $grayscale-white;
+      color: $primary-blue-100;
+      border-color: $primary-blue-100;
+    }
+  }
+}
