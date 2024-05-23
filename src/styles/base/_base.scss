@@ -89,3 +89,23 @@ iframe {
   color: $grayscale-white;
   border: 1px solid transparent;
 }
+
+.name__line{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $grayscale-black;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    width: 529px;
+    height: 2px;
+    background-color: $grayscale-black;
+  }
+}
